@@ -59,7 +59,7 @@ function LandingPage() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const res = await api.get('https://xt7iuklkofas2ugxjeo3d3ktl40nbjua.lambda-url.ap-south-1.on.aws/movies/trending');
+        const res = await api.get('https://tlax7s6a437jghb6k5rrkasxbq0jfgsr.lambda-url.ap-southeast-2.on.aws/movies/trending');
         setMovies(res.data);
       } catch (err) {
         console.error('Failed to fetch movies:', err);
